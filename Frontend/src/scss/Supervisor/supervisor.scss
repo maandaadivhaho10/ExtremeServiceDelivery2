@@ -1,0 +1,193 @@
+@import '../colors';
+
+/* Supervisor Sidebar */
+.supervisor-sidebar {
+    background: linear-gradient(to top, #ffffff 0%, #000000 100%);
+    width: 200%; // Adjust to full width on smaller screens
+    max-width: 550px; // Max width for larger screens
+    padding: 20px;
+    height: 100%;
+    margin: 0;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; // Ensure vertical alignment of items
+}
+
+.supervisor-button {
+    color: $text-color;
+    border: none;
+    padding: 15px 20px; // Adjusted for better responsiveness
+    margin: 10px 5px; // Adjusted for better spacing
+    font-size: 1rem; // Changed to relative unit
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #808080;
+    text-align: center;
+
+    &:hover {
+        background-color: #808080;
+        color: #000000;
+    }
+}
+
+aside h2 {
+    padding-left: 20px; // Adjusted for better spacing
+    margin-bottom: 0;
+    font-size: 1.5rem; // Adjusted for responsiveness
+}
+
+aside .email {
+    color: #808080;
+    padding-left: 20px; // Adjusted for better spacing
+    margin-top: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px; // Adjusted for responsiveness
+    margin-top: 20px; // Adjusted for spacing
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1rem; // Changed to relative unit
+    border: 2px solid white;
+    padding: 8px 10px;
+    width: 90%; // Adjusted for responsiveness
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.links:hover {
+    cursor: pointer;
+}
+
+.supervisor-header,
+.supervisor-footer {
+    width: 100%;
+    color: $text-color;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+    background-color: #e6dede;
+    z-index: 5;
+
+    &.supervisor-header {
+        top: 0;
+        z-index: 5; // Ensure header is on top of other content
+    }
+
+    &.supervisor-footer {
+        bottom: 0;
+        z-index: 5; // Ensure footer is on top of other content
+    }
+}
+
+/* Dashboard Content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; // Adjusted for better spacing
+    width: calc(100% - 250px); // Adjusted for responsive sidebar width
+    margin-top: 60px; // Adjusted for fixed header
+    margin-bottom: 60px; // Adjusted for fixed footer
+    box-sizing: border-box;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Dashboard Summary */
+.dashboard-summary {
+    text-align: center;
+    margin: auto;
+    .summary-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .summary-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+}
+
+/* Footer */
+.supervisor-footer {
+    font-size: 0.75rem; // Adjusted for better scaling
+    padding: 5px 0; // Adjusted for better spacing
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .supervisor-sidebar {
+        max-width: none; // Full width on smaller screens
+    }
+
+    .content {
+        width: 100%; // Full width on smaller screens
+        margin-top: 50px; // Adjusted for fixed header
+        margin-bottom: 50px; // Adjusted for fixed footer
+    }
+}
+
+@media (max-width: 480px) {
+    .supervisor-button {
+        padding: 10px 15px; // Adjusted for smaller screens
+        font-size: 0.875rem; // Adjusted for smaller screens
+    }
+
+    aside h2 {
+        font-size: 1.25rem; // Adjusted for smaller screens
+    }
+
+    .profile-pic {
+        width: 80px; // Adjusted for smaller screens
+    }
+
+    .links {
+        font-size: 0.875rem; // Adjusted for smaller screens
+    }
+
+    .supervisor-footer {
+        font-size: 0.625rem; // Adjusted for smaller screens
+    }
+}

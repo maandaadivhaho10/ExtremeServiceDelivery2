@@ -1,0 +1,241 @@
+// Colors
+$light-green: #b3e6b3;
+$white: #ffffff;
+$dark-green: #4caf50;
+$text-color: #333333; // Dark grey text color
+$hover-color: #388e3c; // Darker green for hover effects
+
+/* Menu Page */
+.supervisor-sidebar {
+    background: $light-green;
+    width: 200%;
+    max-width: 550px;
+    padding: 20px;
+    height: 100%;
+    margin: 0;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.supervisor-button {
+    color: $text-color;
+    background-color: $dark-green;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $white;
+    }
+}
+
+aside h2 {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: $text-color;
+}
+
+aside .email {
+    color: $text-color;
+    padding-left: 20px;
+    margin-top: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links {
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 2px solid $white;
+    padding: 8px 10px;
+    width: 90%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $white;
+    }
+}
+
+.supervisor-header,
+.supervisor-footer {
+    width: 100%;
+    color: $text-color;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    background-color: $light-green;
+    z-index: 5;
+
+    &.supervisor-header {
+        top: 0;
+    }
+
+    &.supervisor-footer {
+        bottom: 0;
+    }
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: calc(100% - 250px);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: $white;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.reported-issues-page {
+  padding: 20px;
+  background-color: $white;
+  text-align: center;
+
+  h1 {
+    color: $dark-green;
+    margin-bottom: 20px;
+  }
+
+  .issues-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .issue-card {
+    background-color: $light-green;
+    padding: 2000px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+
+    h2 {
+      color: $dark-green;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $text-color;
+      margin: 5px 0;
+    }
+
+    strong {
+      color: $text-color;
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .supervisor-sidebar {
+        max-width: none;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .supervisor-button {
+        padding: 10px 15px;
+        font-size: 0.875rem;
+    }
+
+    aside h2 {
+        font-size: 1.25rem;
+    }
+
+    .profile-pic {
+        width: 80px;
+    }
+
+    .links {
+        font-size: 0.875rem;
+    }
+
+    .supervisor-footer {
+        font-size: 0.625rem;
+    }
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  input[type="text"] {
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+  }
+
+  select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: $light-green;
+      color: $text-color;
+
+      &:hover {
+          background-color: $hover-color;
+          color: $white;
+      }
+  }
+}
+
+.issue-card select {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #333;
+}

@@ -1,0 +1,61 @@
+.about-us-page {
+  background-color: #195226;
+  color: #ffffff;
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-us-page .container {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1200px;
+}
+.about-us-page h1 {
+  color: rgb(243, 191, 98);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.about-us-page .section {
+  margin-bottom: 40px;
+}
+.about-us-page .section h2 {
+  color: rgb(243, 191, 98);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about-us-page .section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.about-us-page .section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.about-us-page .section ul li {
+  margin-bottom: 10px;
+}
+.about-us-page .section ul .email-link {
+  color: #eebc1d;
+  text-decoration: none;
+}
+.about-us-page .section ul .email-link:hover {
+  text-decoration: underline;
+}
+
+.goback-button {
+  position: absolute;
+  color: rgb(243, 191, 98);
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}

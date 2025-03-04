@@ -1,0 +1,215 @@
+@import './colors';
+@import '~bootstrap/scss/bootstrap'; // Importing Bootstrap
+
+* {
+  box-sizing: border-box; // Ensure padding and borders are included in the element's width/height
+}
+
+body {
+  overflow-x: hidden; // Prevent horizontal scroll due to extra width
+}
+
+
+.newsfeed {
+  display: flex;
+  justify-content: center; // Center horizontally
+  align-items: center; // Align items to the start
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  gap: 20px;
+  padding: 0px;
+  background-color: $background-color;
+  overflow-y: auto;
+
+  .back-button {
+    font-size: 24px;
+    color: $button-colour !important;
+    cursor: pointer;
+    //margin: 20px;
+    position: absolute;
+    top: 20px;
+    //left: 20px;
+  }
+  
+
+  .newsfeed-item {
+    background-color: $section-background;
+    padding-bottom: 30px;
+    border: 1px solid $border-color;
+    max-width: 53%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid $accent-colour;
+    position: relative; // For absolute positioning of timestamp
+
+    .newsfeed-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+
+      img.profile-pic {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0px 40px 0px 0px;
+        border: 2px $border-color;
+      }
+
+      .post-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .username {
+          font-weight: bold;
+          font-size: 1.2em;
+          color: $primary-color;
+        }
+
+        .category {
+          font-size: 0.8em;
+          color: $input-border;
+          margin-bottom: 5px;
+          font-style: italic;
+        }
+
+        .timestamp {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 0.9em;
+          color: $input-border;
+        }
+      }
+    }
+
+    .issue-description {
+      font-size: 1.1em;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .issue-image {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .verification-section {
+      margin-left: 8%;
+      max-width: 100%;
+      padding-top: 5px;
+      font-size: medium;
+      display: flex;
+      gap: 50px;
+      display: row;
+      align-items: center;
+
+      .verification-button {
+        display: row;
+        align-items: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          color: $hover-color;
+        }
+
+        &.verified {
+          color: red; // Change color when verified
+        }
+      }
+
+      .verification-count {
+        margin-left: -30px;
+        color: $button-colour;
+      }
+
+      .location-line {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; // Center horizontally
+        gap: 10px; 
+        color: $input-border;
+
+        svg {
+          position: inherit; // Adjust icon size if needed
+          color: red;
+          margin-bottom: 2px; // Set icon color
+        }
+
+        .address {
+          color: blue; // Style the address text
+        }
+      }
+
+      div.status-line {
+        max-width: 30%;
+        padding-top: 5px;
+        color: $input-border;
+        display: flex;
+
+        .status {
+          &.resolved {
+            color: green;
+          }
+          &.pending {
+            color: orange;
+          }
+          &.unresolved {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .verify-icon {
+    color: $button-colour;
+    position: relative;
+  }
+
+  .search-filter-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    gap: 20px;
+    font-size: $font-size-small;
+
+    .category-box, .search-box, .keyword-box {
+      position: relative;
+      width: 100%; // Ensure the container width is consistent
+
+      .icon {
+        position: absolute;
+        top: 30%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: $button-colour;
+        font-size: 1rem;
+      }
+
+      select, input[type="text"] {
+        padding: 8px 40px 8px 40px; // Adjust padding to accommodate the icon
+        border: 1px solid $input-border;
+        border-radius: 4px;
+        width: 100%; // Ensure full width
+      }
+
+      select {
+        border: 1px solid $input-border;
+      }
+
+      input[type="text"] {
+        border: 1px solid $input-border;
+      }
+    }
+  }
+}

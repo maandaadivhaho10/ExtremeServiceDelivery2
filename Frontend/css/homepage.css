@@ -1,0 +1,150 @@
+/*home page*/
+.citizen-dashboard {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: rgb(243, 191, 98);
+}
+.citizen-dashboard .header, .citizen-dashboard .footer {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  box-sizing: border-box;
+  background-color: rgb(243, 191, 98);
+  z-index: 5;
+}
+.citizen-dashboard .header.header, .citizen-dashboard .footer.header {
+  top: 0;
+  z-index: 5;
+}
+.citizen-dashboard .header.footer, .citizen-dashboard .footer.footer {
+  bottom: 0;
+  z-index: 5;
+}
+.citizen-dashboard .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.citizen-dashboard .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  position: absolute;
+  left: 200px;
+  transform: translate(73%, 10%);
+  background-color: #195226;
+}
+.citizen-dashboard .content img {
+  width: 250px;
+  height: 250px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.citizen-dashboard .content .home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 0;
+}
+.citizen-dashboard .content .home-buttons button {
+  background-color: rgb(243, 191, 98);
+  color: #ffffff;
+  border: none;
+  padding: 15px 90px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  max-width: 500px;
+  min-width: 600px;
+}
+.citizen-dashboard .content .home-buttons button:hover {
+  background-color: #eebc1d;
+}
+.citizen-dashboard .footer {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+/*Menu*/
+aside {
+  background: rgb(243, 191, 98);
+  width: 25%;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 20px;
+  float: left;
+  height: 100%;
+  margin: 0 auto 0 0;
+  z-index: 10;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  justify-content: center;
+}
+
+aside h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+aside .email {
+  color: #403a3a;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+aside .email :hover {
+  cursor: pointer;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 80px;
+  transform: translate(50%);
+  margin-top: 130px;
+  margin-left: 30px;
+}
+
+.links {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 8px 0px 12px 2px;
+  width: 80%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.links .dash-icon {
+  position: relative;
+}
+
+.links:hover {
+  cursor: pointer;
+}

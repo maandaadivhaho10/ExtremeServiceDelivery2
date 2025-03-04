@@ -1,0 +1,126 @@
+
+@import "~bootstrap/scss/bootstrap";
+
+$background-color:#ffffff;
+$button :#66B539;
+$text-color:#151B1F;
+$text:#000000;
+$accent_color:#E8F7DD;
+$hover_color:#00ab41;
+$box-shadow:rgba(15,215,58,0.312);
+$input-border:#808080;
+
+.admin-report-page {
+  max-width: 50%;
+  width: 100vw;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $background-color;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: 0 4px 10px $box-shadow;
+
+  h1 {
+    font-size: 24px;
+    color: $text-color;
+    margin-top: 40px;
+    margin-bottom: -75px;
+    text-align: center;
+  }
+
+  .date-filter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin-top: 140px;
+    margin-left: 15%;
+
+    .date-picker-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      label {
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: $text-color;
+        margin-right: 85%;
+      }
+
+      .react-datepicker-wrapper {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid ;
+        font-size: 16px;
+        box-sizing: border-box;
+
+        &:focus {
+          border-color: $button;
+          outline: none;
+          box-shadow: 0 0 5px $box-shadow;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;  // Add spacing between date pickers
+      }
+    }
+    
+    .generate-button {
+      padding: 10px 20px;
+      background-color: $button;
+      color: $text;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+
+
+      &:hover {
+        background-color: $hover_color;
+      }
+    }
+
+
+  }
+
+  .report-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+    li {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .report-date {
+        font-weight: bold;
+        color: $button;
+      }
+
+      .report-content {
+        color: #666;
+      }
+    }
+  }
+}

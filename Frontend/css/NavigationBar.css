@@ -1,0 +1,21 @@
+.nav-bar {
+  background-color: #666;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.nav-bar .menu-button, .nav-bar .sign-out-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.nav-bar .menu-button:hover, .nav-bar .sign-out-button:hover {
+  color: #ccc;
+}

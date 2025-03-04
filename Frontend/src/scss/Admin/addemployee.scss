@@ -1,0 +1,158 @@
+@import "~bootstrap/scss/bootstrap";
+
+// Variables
+
+$form-heading-color: #fff;
+$input-border-color: #666;
+$placeholder-color: #7e7575;
+$btn-bg-color: #66B539;
+$btn-hover-bg-color: darken(#5bf800, 10%);
+$btn-active-bg-color: darken(#5bf800, 10%);
+$form-section-bg: #ffffff;
+
+$primary-color: #333;
+$secondary-color: #666;
+$text-color: #000;
+$background-color: #ffffff;
+$card-bg-color: #333;
+$card-border-color: #444;
+$card-hover-bg-color: #555;
+
+$padding: 16px;
+$margin-bottom: 20px;
+$font-weight-bold: 700;
+$border-radius: 8px;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+// General Styles
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 990px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $padding;
+    background-color: $background-color;
+    border: none;
+   border-radius: $border-radius;
+   box-shadow:$box-shadow;
+}
+
+nav {
+    .submit_button {
+        margin-right: $margin-bottom;
+        background-color: $btn-bg-color;
+        color: $form-heading-color;
+        border: 1px solid $input-border-color;
+        padding: 12px 24px;
+        border-radius: $border-radius;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $btn-hover-bg-color;
+        }
+
+        &:active {
+            background-color: $btn-active-bg-color;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+#admin-forms, #manager-form {
+    button {
+        background-color: $btn-bg-color;
+        color: $form-heading-color;
+        border: none;
+        padding: 12px 90px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        border-radius: $border-radius;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $btn-hover-bg-color;
+        }
+
+        &:active {
+            background-color: $btn-active-bg-color;
+        }
+    }
+
+    label {
+        color: $text-color;
+        display: block;
+        margin-top: $margin-bottom / 2;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"], select{
+        border: 1px solid $input-border-color;
+        padding: 12px;
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: $margin-bottom;
+        font-size: 16px;
+       box-shadow: inset 0 1px 3px $box-shadow;
+
+        &::placeholder {
+            color: $placeholder-color;
+        }
+
+        &:focus {
+            border-color: $btn-bg-color;
+            outline: none;
+            box-shadow: 0 0 5px rgba($btn-bg-color, 0.5);
+        }
+    }
+    .option:focus{
+        
+       // background-color: $background-color; /* Initial background color */
+       // color: $primary-text-color; /* Initial text color */
+       // border: 1px solid $input-border;
+        padding: 5px;
+        border-radius: 4px;
+       // transition: background-color 0.3s ease, color 0.3s ease;
+       background-color: $btn-hover-bg-color;
+        &:hover {
+          background-color: $btn-hover-bg-color; /* Background color on hover */
+          color: $text-color; /* Text color on hover */
+        }
+       
+      }
+
+    button {
+        background-color: $btn-bg-color;
+        color: $form-heading-color;
+        border: none;
+        padding: 12px 90px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        border-radius: $border-radius;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $btn-hover-bg-color;
+        }
+
+        &:active {
+            background-color: $btn-active-bg-color;
+        }
+    }
+}

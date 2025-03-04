@@ -1,0 +1,58 @@
+.full-profile {
+  background-color: rgb(243, 191, 98);
+}
+
+.profile-page {
+  background-color: #195226;
+  color: #ffffff;
+  padding: 40px;
+  height: 100vh;
+}
+.profile-page .container {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 4px solid rgb(243, 191, 98);
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+.profile-page h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.profile-page .section {
+  margin-bottom: 40px;
+}
+.profile-page .section h2 {
+  color: #6a1b9a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.profile-page .section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.profile-page .section p strong {
+  font-weight: bold;
+}
+.profile-page .section p a {
+  color: #6a1b9a;
+  text-decoration: none;
+}
+.profile-page .section p a:hover {
+  text-decoration: underline;
+}
+.profile-page .back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  color: rgb(243, 191, 98);
+  cursor: pointer;
+}

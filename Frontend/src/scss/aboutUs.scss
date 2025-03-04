@@ -1,0 +1,74 @@
+@import './colors';
+@import '~bootstrap/scss/bootstrap';
+
+
+.back-button {
+  font-size: 24px;
+  color: $button-colour !important;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.about-us-page {
+  padding: 30px;
+  background-color: $background-color;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px $box-shadow;
+  height: auto;
+  width: 80%;
+  max-width: 1200px;
+  margin: 30px auto;
+  position: relative;
+
+
+  h1 {
+    text-align: center;
+    color: $heading-color;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .section {
+    margin-bottom: 30px;
+
+    h2 {
+      color: $heading-color;
+      margin-bottom: 15px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+
+      li {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .email-link {
+    color: $button-colour;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+      color: $hover-color;
+    }
+  }
+}

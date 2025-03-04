@@ -1,0 +1,94 @@
+@import '../_colors';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+
+.signout-page {
+  text-align: center;
+  padding: 20px;
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: $button-colour;
+    color: white;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: $hover-color;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  .warning-icon{
+    font-size: 5rem;
+    display: block;
+    color: #d32f2f;
+    margin: 10px;
+    transform: translate(185%);
+  }
+}
+
+.popup-content .sign-out-txt {
+  margin: 15px;
+  margin-top: 100px;
+  color: $button-colour;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cancel, .btn-confirm {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-cancel {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn-confirm {
+  background-color: $button-colour;
+  color: white;
+}
+
+@import 'bootstrap/scss/bootstrap';
+
+

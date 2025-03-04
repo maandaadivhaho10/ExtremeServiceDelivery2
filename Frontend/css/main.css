@@ -1,0 +1,542 @@
+.form-section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section .form-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-section .form-heading h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.form-section .details-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.form-section .details-div .icon {
+  margin-right: 1rem;
+}
+.form-section .details-div input,
+.form-section .details-div select {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-section .details-div input::placeholder,
+.form-section .details-div select::placeholder {
+  color: #999;
+}
+.form-section .btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+.form-section .btn:hover {
+  background-color: #444;
+}
+.form-section .btn:active {
+  background-color: #222;
+}
+
+.report-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #666;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.report-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+}
+.report-container .header .menu-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.report-container .header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.report-container .content {
+  display: flex;
+  padding: 1rem;
+}
+.report-container .content .left-section, .report-container .content .right-section {
+  flex: 1;
+  padding: 1rem;
+}
+.report-container .content .left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.report-container .content .left-section h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+.report-container .content .left-section .image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #666;
+  border: 1px solid #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.report-container .content .left-section .download-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.report-container .content .left-section .download-button:hover {
+  background-color: #444;
+}
+.report-container .content .right-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.report-container .content .right-section h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.report-container .content .right-section ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.report-container .content .right-section ul li {
+  color: #fff;
+}
+.report-container .content .right-section p {
+  color: #fff;
+}
+.report-container .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+.report-container .footer .footer-content {
+  font-size: 1rem;
+}
+
+.pending-issues-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.pending-issues-container .header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pending-issues-container .header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.pending-issues-container .issues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.pending-issues-container .issues-grid .issue-card {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+.pending-issues-container .issues-grid .issue-card:hover {
+  background-color: #555;
+}
+.pending-issues-container .issues-grid .issue-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+.pending-issues-container .issues-grid .issue-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.pending-issues-container p {
+  text-align: center;
+  color: #888;
+}
+
+.dashboard {
+  padding: 16px;
+  align-content: center;
+}
+.dashboard h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.dashboard .dashboard-paper {
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #000;
+}
+.dashboard .dashboard-paper-flex {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+.dashboard .dashboard-typography {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.dashboard .dashboard-button {
+  margin-right: 20px;
+}
+.dashboard .notification-text {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.reports-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.reports-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+}
+.reports-container .header .menu-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.reports-container .reports-content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+.reports-container .reports-content .report-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.reports-container .reports-content .report-cards .report-card {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid transparent;
+}
+.reports-container .reports-content .report-cards .report-card.popular {
+  border-color: red;
+}
+.reports-container .reports-content .report-cards .report-card .report-image {
+  height: 100px;
+  background: #e0e0e0;
+  margin-bottom: 10px;
+}
+.reports-container .reports-content .report-cards .report-card .view-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.reports-container .reports-content .report-cards .report-card .view-button:hover {
+  background-color: #333;
+}
+.reports-container .footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+.reports-container .footer .footer-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.reports-container .footer .footer-button:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.menu-container {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.menu-container .menu-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.menu-container .menu-header .user-icon {
+  font-size: 50px;
+}
+.menu-container .menu-header .menu-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.menu-container .menu-content {
+  width: 100%;
+  flex-grow: 1;
+}
+.menu-container .menu-content .menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-container .menu-content .menu-list .menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.menu-container .menu-content .menu-list .menu-item:hover {
+  background-color: #575757;
+}
+.menu-container .menu-content .menu-list .menu-item .menu-arrow {
+  font-size: 20px;
+}
+.menu-container .logout-button {
+  margin: 20px;
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: calc(100% - 40px);
+  transition: background-color 0.3s ease;
+}
+.menu-container .logout-button:hover {
+  background-color: #575757;
+}
+
+.some-class {
+  padding: 16px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-right: 20px;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.confirmation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  /* Container and Layout */
+}
+.confirmation-page .confirmation-message {
+  text-align: center;
+}
+.confirmation-page .confirmation-message h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.confirmation-page .confirmation-message p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.confirmation-page .button-container {
+  display: flex;
+  gap: 1rem;
+}
+.confirmation-page .button-container .btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.confirmation-page .button-container .btn.btn-menu {
+  background-color: #000;
+  color: #fff;
+}
+.confirmation-page .button-container .btn.btn-logout {
+  background-color: #ccc;
+  color: #000;
+}
+.confirmation-page .button-container .btn:hover {
+  opacity: 0.9;
+}
+.confirmation-page .combined-page {
+  display: flex;
+  height: 100vh;
+}
+.confirmation-page .menu-container {
+  width: 250px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.confirmation-page .profile-section {
+  text-align: center;
+  padding: 16px;
+}
+.confirmation-page .profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+.confirmation-page .profile-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.confirmation-page .menu-content {
+  flex: 1;
+  padding: 16px;
+}
+.confirmation-page .menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.confirmation-page .menu-item {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+.confirmation-page .menu-footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+}
+.confirmation-page .dashboard {
+  flex: 1;
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
+}
+.confirmation-page .dashboard-header {
+  background-color: #000;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+.confirmation-page .dashboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+.confirmation-page .main-section {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.confirmation-page .logo img {
+  width: 150px;
+  height: auto;
+}
+.confirmation-page .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.confirmation-page .buttons button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.confirmation-page .buttons button:hover {
+  background-color: #333;
+}
+.confirmation-page .charts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  width: 50%;
+}
+.confirmation-page .chart {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,183 @@
+// Import your color variables
+@import './colors';
+@import '~bootstrap/scss/bootstrap';
+
+
+
+// Submit Button Styles
+.submit-issue-button {
+  padding: 12px 20px;
+  background-color: $button-colour;
+  color: #fff;
+  font-size: $font-size-small;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  
+  &:hover {
+    background-color: darken($button-colour, 10%);
+  }
+}
+
+// Back Button Styles
+.goback-button {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .back-button {
+    font-size: 24px;
+    color: $button-colour;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+
+  // Container Styles
+  .container {
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: $background-color;
+    border-radius: 10px;
+    height: 90vh;
+    width: 50vw;
+    box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid $accent-colour;
+  
+    .ppp1{
+font-size: $font-size-small;
+color: rgb(61, 61, 61);
+padding: 10px;
+
+    }
+    .labels{
+  color: $text-color;
+  font-weight: 500;
+  font-size: $font-size-footer;
+  
+    }
+
+    h1{
+      text-align: center;
+      font-size: $font-size-base;
+      font-weight: bold;
+    }
+  
+    .form1{
+      width: 100%;  // Ensure form uses full width of container
+      max-width: 100%;  // Remove any constraints on form width
+      display: flex;
+      flex-direction: column;
+      background-color: $background-color;
+    }
+  
+    
+  // Form Styles
+  form.form1 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+  
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: $text-color;
+    }
+  
+    input, select, textarea {
+      padding: 5px;
+      margin-bottom: 15px;
+      border: 1px solid $input-border;
+      border-radius: 5px;
+      font-size: 16px;
+      color: $text-color;
+      background-color: #fff;
+      
+      &:focus {
+        border-color: $input-focus-color;
+        outline: none;
+      }
+    }
+  
+    // Specific Styles for Select
+    select {
+      height: 40px;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='gray'><path d='M1 5l7 7 7-7'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 16px 16px;
+    }
+  
+    // Specific Styles for Textarea
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+  
+  }
+
+}
+
+
+// Location Input and Button Styles
+.location-container {
+  display: flex;
+  align-items: center; // Align vertically in the center
+  gap: 10px; // Add space between the input and the button
+
+
+// Styles for the input field
+input {
+  flex-grow: 1; // Ensures the input takes available space in flexbox
+  padding: 12px; // Increase padding to make the input taller and wider
+  border: 1px solid $input-border-color;
+  border-radius: 5px;
+  font-size: 18px; // Increase font size for a bigger input
+  color: $text-color;
+  background-color: #fff;
+  width: 70%; // Set a minimum width to ensure the input doesn't shrink too much
+
+  &:focus {
+    border-color: $input-focus-color;
+    outline: none;
+  }
+}
+
+  // Styles for the button
+  .gps-button {
+    width: 30%;
+    flex-grow: 1;
+    padding: 10px 30px;
+    background-color: $button-colour;
+    color: #fff;
+    font-size: $font-size-small;
+    font-weight: 400;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($button-colour, 10%);
+    }
+
+    &:disabled {
+      background-color: lighten($button-colour, 10%);
+      cursor: not-allowed;
+    }
+  }
+}

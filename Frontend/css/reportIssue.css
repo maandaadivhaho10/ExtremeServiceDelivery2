@@ -1,0 +1,56 @@
+/*Report Issue Page*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px; /* Adjust size as needed */
+  cursor: pointer;
+  color: #6a1b9a; /* Adjust color as needed */
+}
+
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100vh;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+button:hover {
+  background-color: #eebc1d;
+}

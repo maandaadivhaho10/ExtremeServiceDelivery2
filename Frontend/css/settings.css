@@ -1,0 +1,75 @@
+.settings-page {
+  width: 100%;
+  height: 100vh;
+}
+.settings-page .container {
+  padding: 20px;
+  margin: 0 auto;
+}
+.settings-page .container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+.settings-page .container .section {
+  margin-bottom: 30px;
+}
+.settings-page .container .section h2 {
+  font-size: 1.5em;
+  color: #6a1b9a;
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.settings-page .container .section .form-group {
+  margin-bottom: 15px;
+}
+.settings-page .container .section .form-group label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.settings-page .container .section .form-group input[type=text],
+.settings-page .container .section .form-group input[type=email],
+.settings-page .container .section .form-group input[type=password],
+.settings-page .container .section .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.settings-page .container .section .form-group input[type=checkbox] {
+  margin-right: 10px;
+}
+.settings-page .container .section .form-group input[type=checkbox] + label {
+  font-size: 1em;
+  color: #ffffff;
+}
+.settings-page .container .section .btn-save {
+  background-color: #6a1b9a;
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.settings-page .container .section .btn-save:hover {
+  background-color: #eebc1d;
+}
+.settings-page .container .section .form-group {
+  margin-bottom: 20px;
+}
+.settings-page .back-button {
+  font-size: 1.5em;
+  color: #6a1b9a;
+  cursor: pointer;
+  margin: 20px;
+  transition: color 0.3s ease;
+}
+.settings-page .back-button:hover {
+  color: #eebc1d;
+}

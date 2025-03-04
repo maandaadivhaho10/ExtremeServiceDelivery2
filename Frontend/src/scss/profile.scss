@@ -1,0 +1,201 @@
+@import './colors';
+@import '~bootstrap/scss/bootstrap';
+
+@mixin button-style {
+  background-color: $button-colour;
+  color: white;
+  border: 2px $button-colour;
+  padding: 10px 10px;
+  font-size: $font-size-footer;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  max-width: 200px;
+  min-width: 200px;
+
+  &:hover {
+      background-color: $hover-color;
+  }
+}
+
+.profile-page {/* Fallback color, might be overridden by $background-color */
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: $background-color;
+  margin-top:0px;
+  border-radius: 15px;
+  position: relative; /* Ensure positioning context for child elements */
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: $accent-colour;
+    padding: 0px;
+    width: 100%;
+  
+
+    .profile-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px;
+  
+      .change-photo-button {
+        background-color: $button-colour;
+        color: $button-text-color;
+        padding: 6px 6px;
+        border: none;
+        border-radius: 15px;
+        margin-top: 0px;
+        cursor: pointer;
+        font-size: 8px;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+  
+      .file-input {
+        display: none; // Hide the file input
+      }
+    }
+  
+   /* Include padding and border in element's total width and height */
+    
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  
+    .full-name {
+      font-size: 28px;
+      color: #333;
+      margin-top: 18px;
+    }
+  }
+  
+
+  .section {
+    width: 50%; /* Content box less wide than header */
+    margin: 20px auto; /* Center the content box horizontally */
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid $accent-colour;
+    box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.1); /* Add shadow to content only */
+    background-color: $background-color; /* Ensure background color matches */
+    margin-top: 60px;
+    
+    h2 {
+      font-size: 22px;
+      color: $heading-color;
+      border-bottom: 2px solid $button-colour;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 2.5;
+
+      strong {
+        color: $text-color;
+      }
+    }
+  }
+  
+  .edit-profile-button {
+    display: block;
+    width: 20%;
+    padding: 12px;
+    background-color: $button-colour;
+    margin: 20px auto; /* Center the button horizontally and add some vertical margin */
+    color: $button-text-color;
+    font-size: $font-size-small;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none !important; /* Ensure no underline */
+    appearance: button; /* Ensure it looks like a button across browsers */
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $hover-color;
+        text-decoration: none !important; /* Ensure underline doesn't appear on hover */
+    }
+
+    &:link, &:visited {
+        text-decoration: none !important; /* Remove underline for visited and unvisited links */
+    }
+}
+
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) { /* Adjust media query for responsiveness */
+    padding: 15px;
+    width: 100%;
+
+    .edit-profile-button {
+      width: 60%;
+      font-size: 16px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .profile-header {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      
+      .profile-picture {
+        width: 120px;
+        height: 120px;
+      }
+
+      .full-name {
+        font-size: 20px;
+      }
+    }
+
+    .section h2 {
+      font-size: 20px;
+    }
+
+    .section p {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+
+  .back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+
+    .back-button {
+      font-size: 24px;
+      color: $button-colour;
+      cursor: pointer;
+    }
+  }
+}

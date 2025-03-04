@@ -1,0 +1,57 @@
+.form-section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-section .form-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-section .form-heading h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+.form-section .details-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.form-section .details-div .icon {
+  margin-right: 1rem;
+}
+.form-section .details-div input,
+.form-section .details-div select {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-section .details-div input::-moz-placeholder, .form-section .details-div select::-moz-placeholder {
+  color: #aaa;
+}
+.form-section .details-div input::placeholder,
+.form-section .details-div select::placeholder {
+  color: #aaa;
+}
+.form-section .btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+.form-section .btn:hover {
+  background-color: #0056b3;
+}
+.form-section .btn:active {
+  background-color: #004080;
+}/*# sourceMappingURL=main.css.map */

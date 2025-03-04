@@ -1,0 +1,80 @@
+
+@import '../_colors';
+
+// body, html {
+//     height: 100%;
+//     margin: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #f0f0f0; /* Light grey background */
+// }
+
+.report-content {
+    text-align: center;
+    padding: 40px; /* Add padding for better spacing */
+    background-color: white; /* Background for content */
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 20px;
+}
+
+.report-textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid #ccc; /* Border for textarea */
+    background-color: #e0e0e0; /* Greyish background */
+    color: #000; /* Black text color */
+    margin-bottom: 20px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.email-input {
+    width: 100%;
+    max-width: 500px; /* Set a max-width for input fields */
+    padding: 10px;
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid #ccc; /* Visible bottom border */
+    background-color: white; /* White background */
+    color: #000; /* Black text color */
+    margin-bottom: 20px;
+    border-radius: 0; /* Remove corner rounding */
+}
+
+.submit-button {
+    background-color: $button-colour; /* Button color from variables */
+    color: black; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: $hover-color; /* Slightly lighter black on hover */
+}
+
+.home-back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.home-back-button {
+    font-size: 24px;
+    color: $button-colour;
+    cursor: pointer;
+    transition: color 0.3s;
+    
+    &:hover {
+        color: $hover-color;
+    }
+}

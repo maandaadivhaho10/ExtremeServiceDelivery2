@@ -1,0 +1,108 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+/* Styles for the form container */
+$background-color:#ffffff;
+$text-color:#151B1F;
+$color:#000000;
+$button:#66B539;
+$accent_color:#E8F7DD;
+$hover_color:#00ab41;
+
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:$background-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation buttons */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav button {
+    background-color: $button;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: $hover_color;
+}
+
+/* Section header */
+.managers-list h2,
+.supervisors-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Search bar */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid $accent_color;
+    font-size: 16px;
+}
+
+/* Cards for manager/supervisor */
+.manager-card,
+.supervisor-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: $background-color;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manager-info,
+.supervisor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.manager-name,
+.supervisor-name {
+    font-size: 18px;
+    font-weight: bold;
+    color:$color;
+}
+
+.manager-email,
+.supervisor-email {
+    font-size: 14px;
+    color: $text-color;
+}
+
+/* Delete button */
+.delete-button {
+    background-color: $button;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: $hover_color;
+}

@@ -1,0 +1,24 @@
+.nav-bar {
+    background-color: #666;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  
+    .menu-button, .sign-out-button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+  

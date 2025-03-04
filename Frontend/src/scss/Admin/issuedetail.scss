@@ -1,0 +1,69 @@
+@import "~bootstrap/scss/bootstrap";
+
+.issue-detail-container {
+  width: 800px; // Adjust the width as needed
+  margin: 50px auto; // Center the container horizontally
+  background-color: #ffffff; // Light background color for contrast
+  padding: 30px; // Add padding for space around the content
+  border-radius: 10px; // Rounded corners
+  height: 100px;
+  //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Add a subtle shadow
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Space out the elements
+  margin-bottom: 20px; // Space between header and content
+}
+
+.back-button,
+.download-button {
+  font-size: 24px; // Increase icon size
+  cursor: pointer;
+  color: #333; // Darker color for visibility
+}
+
+.issue-id {
+  font-size: 20px; // Larger font size
+  font-weight: bold;
+  color: #555; // Gray color for the issue ID text
+}
+
+
+.issue-info-card {
+  width: 100%;                  // Full width card
+  max-width: 800px;             // Optional: limit max width
+  padding: 20px;                // Optional: padding inside the card
+  background-color: #fff;       // White background for the card
+ // border-radius: 10px;          // Optional: add rounded corners
+ // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Optional: add a subtle shadow
+  font-size: 16px;              // Optional: adjust font size
+  line-height: 1.5;             // Optional: increase line height for better spacing
+}
+
+.issue-info-card p {
+  margin: 10px 0; // Add spacing between paragraphs
+}
+
+.issue-info-card strong {
+  display: block;
+  margin-bottom: 5px; // Space between the label and its content
+  color: #000000; // Darker color for the labels
+}
+
+.email {
+  color: #007bff; // Use a blue color for the email to make it stand out
+  text-decoration: underline; // Underline to indicate it's an email link
+}
+.issueDetail {
+  display: flex;                // Use Flexbox for layout
+  justify-content: center;      // Center contents horizontally
+  align-items: center;          // Center contents vertically
+ // flex-direction: column;       // Stack items vertically
+  height: 100vh;            // Ensure the container takes up the full viewport height (optional)
+  background-color: #ffffff;    // Optional: background color
+  padding: 20px;                // Optional: padding inside the container
+ // box-shadow: 0 2px 8px rgba(253, 253, 253, 0.1); // Optional: add a subtle shadow
+ // border-radius: 10px;          // Optional: add rounded corners
+}

@@ -1,0 +1,122 @@
+/* Container and Layout */
+.combined-page {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-container {
+  width: 250px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.profile-section {
+  text-align: center;
+  padding: 16px;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-content {
+  flex: 1;
+  padding: 16px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+.menu-footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.dashboard-header {
+  background-color: #000;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.main-section {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background-color: #333;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+.chart {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,122 @@
+@import './colors';
+@import '~bootstrap/scss/bootstrap';
+
+/* status.scss */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: $background-color; /* Custom variable */
+}
+
+.back-button {
+    font-size: 24px;
+    color: $button-colour !important;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.status-heading {
+    text-align: center;
+    margin-top: 50px;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: $text-color;
+    }
+}
+
+/* Container for all the report-details */
+.reports-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 1200px; /* Adjust max width if needed */
+    gap: 20px; /* Space between each report */
+}
+
+/* Each individual report */
+.report-details {
+    background-color: $accent-colour;//rgb(202, 231, 194);
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px); /* Flex-grow and width for two items per row */
+    max-width: calc(50% - 20px); /* Ensure max width respects gap */
+    border-radius: 10px;
+    border: 1px solid $button-colour;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    /* Display the text items in a single row */
+    .details-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        p {
+            margin: 0;
+            font-size: medium;
+            color: $text-color;
+        }
+
+        .is-status{
+            color: rgb(6, 115, 6);
+            font-style: italic;
+
+        }
+
+        .status{
+            color: black;
+            font-style: normal;
+        }
+        
+    }
+
+    /* Ensure the image does not break the layout */
+    .issue-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}
+
+/* Container to center the button */
+a {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Optional: if you want to vertically align within the container */
+    width: 100%; /* Ensures the container spans full width */
+    margin-top: 0px; /* Adjust the space above the button */
+    text-decoration: none !important;
+  }
+  
+  /* Existing button styles */
+   .done-btn {
+    background-color: $button-colour;
+    text-decoration: none !important;
+    color: #ffffff;
+    font-size: $font-size-small;
+    width: auto; /* Let the button width adjust naturally */
+    padding: 10px 80px; /* Adjust padding as necessary */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  

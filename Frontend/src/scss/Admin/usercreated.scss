@@ -1,0 +1,76 @@
+@import "~bootstrap/scss/bootstrap";
+
+// styles/main.scss
+
+$primary-color: #4CAF50;
+$secondary-color: #ffffff;
+$background-color: #f9f9f9;
+$header-bg-color: #f1f1f1;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+$padding: 16px;
+$transition-time: 0.3s;
+
+.confirmation-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+
+  .confirmation-message {
+    text-align: center;
+    background-color: $header-bg-color;
+    padding: $padding * 2;
+    border-radius: $border-radius;
+    box-shadow: 0 0 10px $shadow-color;
+    margin-bottom: $padding * 2;
+
+    h1 {
+      color: $primary-color;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: $secondary-color;
+      font-size: 18px;
+      background-color: $primary-color;
+      padding: $padding;
+      border-radius: $border-radius;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    gap: 16px;
+
+    .btn {
+      padding: $padding * 1.5;
+      font-size: 16px;
+      border: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+      transition: background-color $transition-time ease;
+
+      &.btn-menu {
+        background-color: $primary-color;
+        color: $secondary-color;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+
+      &.btn-logout {
+        background-color: darken($primary-color, 20%);
+        color: $secondary-color;
+
+        &:hover {
+          background-color: darken($primary-color, 30%);
+        }
+      }
+    }
+  }
+}
