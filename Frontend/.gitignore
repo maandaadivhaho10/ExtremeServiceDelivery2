@@ -25,3 +25,4 @@ yarn-error.log*
 .env
 .vscode/
 dist/
+SKIP_PREFLIGHT_CHECK=true

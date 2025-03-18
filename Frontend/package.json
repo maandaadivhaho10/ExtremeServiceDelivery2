@@ -2,6 +2,7 @@
   "name": "extreme-service-delivery-citizen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maandaadivhaho10.github.io/ExtremeServiceDelivery2",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -15,25 +16,29 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "chart.js": "^4.4.3",
+    "classnames": "^2.5.1",
     "html2canvas": "^1.4.1",
-    "jspdf": "^2.5.1",
+    "jspdf": "^3.0.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-chartjs-2": "^5.2.0",
     "react-datepicker": "^7.3.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-toastify": "^10.0.5",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.77.8",
+    "uncontrollable": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,10 +61,11 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "css-loader": "^7.1.2",
-    "eslint": "^8.57.0",
+    "eslint": "6.6.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.3.0",
     "postcss-loader": "^8.1.1",
     "sass-loader": "^15.0.0"
   }
