@@ -2,7 +2,7 @@
   "name": "extreme-service-delivery-citizen",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://your-username.github.io/your-repo",
+  "homepage": "https://github.com/maandaadivhaho10/ExtremeServiceDelivery2",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
