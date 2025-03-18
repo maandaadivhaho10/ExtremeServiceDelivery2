@@ -2,6 +2,7 @@
   "name": "extreme-service-delivery-citizen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maandaadivhaho10.github.io/ExtremeServiceDelivery2",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -33,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +63,7 @@
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.3.0",
     "postcss-loader": "^8.1.1",
     "sass-loader": "^15.0.0"
   }
