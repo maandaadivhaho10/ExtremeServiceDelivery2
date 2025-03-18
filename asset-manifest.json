@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/maandaadivhaho10/ExtremeServiceDelivery2/static/css/main.6ab9118c.css",
-    "main.js": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/main.f3a26838.js",
-    "static/js/213.7ea740be.chunk.js": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/213.7ea740be.chunk.js",
-    "static/js/732.f1479619.chunk.js": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/732.f1479619.chunk.js",
+    "main.css": "/maandaadivhaho10/ExtremeServiceDelivery2/static/css/main.0d3a9950.css",
+    "main.js": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/main.b2378a11.js",
+    "static/js/213.c8950585.chunk.js": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/213.c8950585.chunk.js",
+    "static/js/732.db6d30ad.chunk.js": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/732.db6d30ad.chunk.js",
     "static/media/road_potholes.webp": "/maandaadivhaho10/ExtremeServiceDelivery2/static/media/road_potholes.0fac26125e1ede8c27e6.webp",
     "static/media/signup.png": "/maandaadivhaho10/ExtremeServiceDelivery2/static/media/signup.74a465837f0fec064848.png",
     "static/media/infrastructure.jpg": "/maandaadivhaho10/ExtremeServiceDelivery2/static/media/infrastructure.877584028e75738cdc1f.jpg",
@@ -23,13 +23,13 @@
     "static/media/elect2.jpg": "/maandaadivhaho10/ExtremeServiceDelivery2/static/media/elect2.03e9c03e5bea60d358a8.jpg",
     "static/media/road.png": "/maandaadivhaho10/ExtremeServiceDelivery2/static/media/road.3965c412bf636e78f6da.png",
     "index.html": "/maandaadivhaho10/ExtremeServiceDelivery2/index.html",
-    "main.6ab9118c.css.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/css/main.6ab9118c.css.map",
-    "main.f3a26838.js.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/main.f3a26838.js.map",
-    "213.7ea740be.chunk.js.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/213.7ea740be.chunk.js.map",
-    "732.f1479619.chunk.js.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/732.f1479619.chunk.js.map"
+    "main.0d3a9950.css.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/css/main.0d3a9950.css.map",
+    "main.b2378a11.js.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/main.b2378a11.js.map",
+    "213.c8950585.chunk.js.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/213.c8950585.chunk.js.map",
+    "732.db6d30ad.chunk.js.map": "/maandaadivhaho10/ExtremeServiceDelivery2/static/js/732.db6d30ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ab9118c.css",
-    "static/js/main.f3a26838.js"
+    "static/css/main.0d3a9950.css",
+    "static/js/main.b2378a11.js"
   ]
 }
