@@ -22,7 +22,7 @@
     "react-chartjs-2": "^5.2.0",
     "react-datepicker": "^7.3.0",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.25.1",
+    "react-router-dom": "^6.30.0",
     "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.5",
     "resolve-url-loader": "^5.0.0",
