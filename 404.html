@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        } else {
+          history.replaceState(null, null, '/');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <script>
+      window.location.href = '/repository-name';
+    </script>
+  </body>
+</html>
