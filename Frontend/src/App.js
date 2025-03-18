@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter ,Router as Router, Routes, Route } from 'react-router-dom';
 import React  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -57,7 +57,7 @@ import Unauthorized
   from './components/Unauthorized';
 const App = () => {
   return (
-    <Router basename="/maandaadivhaho10/ExtremeServiceDelivery2/">
+    < HashRouter basename="/maandaadivhaho10/ExtremeServiceDelivery2/">
       <Routes>
         {/* Login and Signup Routes */}
         <Route path="/" element={<Welcome />} />
@@ -132,7 +132,7 @@ const App = () => {
         {/* Handle undefined routes */}
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 
