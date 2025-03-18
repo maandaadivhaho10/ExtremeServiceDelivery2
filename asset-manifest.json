@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ExtremeServiceDelivery2/static/css/main.a407d608.css",
-    "main.js": "/ExtremeServiceDelivery2/static/js/main.d8fdbf01.js",
+    "main.js": "/ExtremeServiceDelivery2/static/js/main.d61f6bc8.js",
     "static/js/213.c8950585.chunk.js": "/ExtremeServiceDelivery2/static/js/213.c8950585.chunk.js",
     "static/js/732.5ce86150.chunk.js": "/ExtremeServiceDelivery2/static/js/732.5ce86150.chunk.js",
     "static/media/road_potholes.webp": "/ExtremeServiceDelivery2/static/media/road_potholes.0fac26125e1ede8c27e6.webp",
@@ -24,12 +24,12 @@
     "static/media/road.png": "/ExtremeServiceDelivery2/static/media/road.3965c412bf636e78f6da.png",
     "index.html": "/ExtremeServiceDelivery2/index.html",
     "main.a407d608.css.map": "/ExtremeServiceDelivery2/static/css/main.a407d608.css.map",
-    "main.d8fdbf01.js.map": "/ExtremeServiceDelivery2/static/js/main.d8fdbf01.js.map",
+    "main.d61f6bc8.js.map": "/ExtremeServiceDelivery2/static/js/main.d61f6bc8.js.map",
     "213.c8950585.chunk.js.map": "/ExtremeServiceDelivery2/static/js/213.c8950585.chunk.js.map",
     "732.5ce86150.chunk.js.map": "/ExtremeServiceDelivery2/static/js/732.5ce86150.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a407d608.css",
-    "static/js/main.d8fdbf01.js"
+    "static/js/main.d61f6bc8.js"
   ]
 }
