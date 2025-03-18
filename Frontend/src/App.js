@@ -57,7 +57,7 @@ import Unauthorized
   from './components/Unauthorized';
 const App = () => {
   return (
-    < HashRouter basename="/maandaadivhaho10/ExtremeServiceDelivery2/">
+    < HashRouter basename="/ExtremeServiceDelivery2/">
       <Routes>
         {/* Login and Signup Routes */}
         <Route path="/" element={<Welcome />} />
