@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Shared Imports
@@ -57,7 +57,7 @@ import Unauthorized
   from './components/Unauthorized';
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ExtremeServiceDelivery2">
       <Routes>
         {/* Login and Signup Routes */}
         <Route path="/" element={<Welcome />} />
